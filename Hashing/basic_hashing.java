@@ -14,18 +14,19 @@ public class basic_hashing {
             arr[i] =sc.nextInt(); 
         }
         //hash array...
-        //precalculation;5
-        int hash[] = new int[10];
+        //precalculation;
+        int hash[] = new int[12];
         for(int i=0; i<n;i++){
           hash[arr[i]] += 1;
         }
-        int m =sc.nextInt();
-        for (int i = 0; i < m ; i++) {
-            System.out.println("The element we have to count: ");
-            i=sc.nextInt();
-            m--;
-            //fatch..
-            System.out.println(hash[i]);
-        }
+          int q;
+          q = sc.nextInt();
+          while (q-- != 0) {
+              int number;
+              System.out.println("The element we have to count: ");
+              number = sc.nextInt();
+              // fetching:
+              System.out.println(hash[number]);
+          }
       }
 }
